@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module full_adder(a,b,cin,s,cout);
+module full_adder(a,b,cin,s,cou);
 input a,b,cin;
-output s,cout;
+output s,cou;
 assign s=a^b^cin;
-assign cout=(a&b)|(b&cin)|(cin&a);
+assign cou=(a&b)|(b&cin)|(cin&a);
 endmodule
