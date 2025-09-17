@@ -1,37 +1,16 @@
-# Vivado project temporary and generated files
-
-# Log and journal files
-*.jou
-*.log
-*.str
-*.dmp
-*.rpt
-*.xml
-
-# Checkpoints and design runs
-*.wdb
-*.pb
-*.xsa
-*.xpr
-*.runs/
+# Vivado generated folders
 *.cache/
 *.hw/
-*.sim/
 *.ip_user_files/
+*.runs/
+*.sim/
 *.Xil/
 
-# IP-related
-*.data/
-*.srcs/
-*.sdk/
-*.ip/
-*.iop/
-*.cxl.ip/
+# Vivado project files
+*.xpr
+*.jou
+*.log
 
-# Backup / Autosave
-*.backup*
-*~ 
-
-# OS-specific
+# OS files
 .DS_Store
 Thumbs.db
