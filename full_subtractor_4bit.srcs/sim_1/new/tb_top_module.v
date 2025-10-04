@@ -23,8 +23,8 @@
 `timescale 1ns/1ps
 module tb_top_module;
 
-reg  [63:0] a, b;
-wire [63:0] c;
+reg  [3:0] a, b;
+wire [3:0] c;
 wire cout,pos,neg;
 
 // Instantiate DUT
@@ -43,12 +43,12 @@ initial begin
               $time, a, b, c, cout);
 
     // Test cases
-    a = 64'd1068; b = 64'd1200; #10;
-    a = 64'd1800; b = 64'd1780; #10;
-    a = 64'd1902; b = 64'd1; #10;
-    a = 64'd8291; b = 64'd2378; #10;
-    a = 64'd1028; b = 64'd1292; #10;
-    a = 64'd9930; b = 64'd45; #10;
+    a = 4'd12; b = 4'd12; #10;
+    a = 4'd7; b = 4'd1; #10;
+    a = 4'd1; b = 4'd8; #10;
+    a = 4'd9; b = 4'd3; #10;
+    a = 4'd10; b = 4'd9; #10;
+    a = 4'd3; b = 64'd2; #10;
     
     $finish;
 end

@@ -22,10 +22,10 @@
 
 module mux2to1(I0,I1,S,Y);
 
-input [63:0]I0,I1;
+input [3:0]I0,I1;
 input S;
 
-output [63:0]Y;
+output [3:0]Y;
 
 assign Y=S?I1:I0;
 
